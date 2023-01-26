@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paimonime</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/x-icon" href="images/logopaimon.png">
+    <script src="https://kit.fontawesome.com/8dc6bde773.js" crossorigin="anonymous"></script>
+  </head>
+  <body style="background-image: url(images/background2.jpg); background-position: 50%;">
+  <!-- Navigation Bar -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+      <img src="images/logopaimon.png" alt="Logo" width="60" height="55"> 
+      Paimonime
+      </a>
+    <button class="navbar-toggler px-0" type="button" data-mdb-toggle="collapse"
+      data-mdb-target="#navbarExampleOnHover" aria-controls="navbarExampleOnHover" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav ms-5">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="animelist.html">Anime List</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Ongoing Anime</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Genre List
+          </a>
+      <div class="dropdown-menu">
+        <ul>
+          <li><a class="dropdown-item" href="#">Action</a></li>
+          <li><a class="dropdown-item" href="#">Adventure</a></li>
+          <li><a class="dropdown-item" href="#">Comedy</a></li>
+          <li><a class="dropdown-item" href="#">Demons</a></li>
+        </ul>
+        <ul>
+          <li><a class="dropdown-item" href="#">Drama</a></li>
+          <li><a class="dropdown-item" href="#">Ecchi</a></li>
+          <li><a class="dropdown-item" href="#">Fantasy</a></li>
+          <li><a class="dropdown-item" href="#">Game</a></li>
+        </ul>
+        <ul>
+          <li><a class="dropdown-item" href="#">Harem</a></li>
+          <li><a class="dropdown-item" href="#">Historical</a></li>
+          <li><a class="dropdown-item" href="#">Horror</a></li>
+          <li><a class="dropdown-item" href="#">Magic</a></li>
+        </ul>
+        <ul>
+          <li><a class="dropdown-item" href="#">Martial Arts</a></li>
+          <li><a class="dropdown-item" href="#">Mecha</a></li>
+          <li><a class="dropdown-item" href="#">Military</a></li>
+          <li><a class="dropdown-item" href="#">Music</a></li>
+        </ul>
+        <ul>
+          <li><a class="dropdown-item" href="#">Mystery</a></li>
+          <li><a class="dropdown-item" href="#">Physicological</a></li>
+          <li><a class="dropdown-item" href="#">Romance</a></li>
+          <li><a class="dropdown-item" href="#">School</a></li>
+        </ul>
+        <ul>
+          <li><a class="dropdown-item" href="#">Sci-Fi</a></li>
+          <li><a class="dropdown-item" href="#">Seinen</a></li>
+          <li><a class="dropdown-item" href="#">Shounen</a></li>
+          <li><a class="dropdown-item" href="#">Slice of Life</a></li>
+        </ul>
+        <ul>
+          <li><a class="dropdown-item" href="#">Sports</a></li>
+          <li><a class="dropdown-item" href="#">Super Power</a></li>
+          <li><a class="dropdown-item" href="#">Supernatural</a></li>
+          <li><a class="dropdown-item" href="#">Thriller</a></li>
+        </ul>
+      </div>
+      </li>
+     </ul>
+   </div>
+  </div>
+  <form class="d-flex">
+    <input class="form-control me-2" type="text" placeholder="Search Anime...">
+    <button class="btn btn-primary" type="button"><i class="fa-solid fa-magnifying-glass"></i></button>
+  </form>
+  </nav>
+  <br>
+  <br>
+    <!-- Anime List -->
+  <div class="container ms-5">
+    <h1 style="color: white;"><b>Anime List</b></h1>
+    <ul class="pagination ms-5 me-5">
+      <li class="page-item"><a class="page-link" href="#alist">A</a></li>
+      <li class="page-item"><a class="page-link" href="#blist">B</a></li>
+      <li class="page-item"><a class="page-link" href="#clist">C</a></li>
+      <li class="page-item"><a class="page-link" href="#dlist">D</a></li>
+      <li class="page-item"><a class="page-link" href="#elist">E</a></li>
+      <li class="page-item"><a class="page-link" href="#flist">F</a></li>
+      <li class="page-item"><a class="page-link" href="#glist">G</a></li>
+      <li class="page-item"><a class="page-link" href="#hlist">H</a></li>
+      <li class="page-item"><a class="page-link" href="#ilist">I</a></li>
+      <li class="page-item"><a class="page-link" href="#jlist">J</a></li>
+      <li class="page-item"><a class="page-link" href="#klist">K</a></li>
+      <li class="page-item"><a class="page-link" href="#llist">L</a></li>
+      <li class="page-item"><a class="page-link" href="#mlist">M</a></li>
+      <li class="page-item"><a class="page-link" href="#nlist">N</a></li>
+      <li class="page-item"><a class="page-link" href="#olist">O</a></li>
+      <li class="page-item"><a class="page-link" href="#plist">P</a></li>
+      <li class="page-item"><a class="page-link" href="#qlist">Q</a></li>
+      <li class="page-item"><a class="page-link" href="#rlist">R</a></li>
+      <li class="page-item"><a class="page-link" href="#slist">S</a></li>
+      <li class="page-item"><a class="page-link" href="#tlist">T</a></li>
+      <li class="page-item"><a class="page-link" href="#ulist">U</a></li>
+      <li class="page-item"><a class="page-link" href="#vlist">V</a></li>
+      <li class="page-item"><a class="page-link" href="#wlist">W</a></li>
+      <li class="page-item"><a class="page-link" href="#xlist">X</a></li>
+      <li class="page-item"><a class="page-link" href="#ylist">Y</a></li>
+      <li class="page-item"><a class="page-link" href="#zlist">Z</a></li>
+    </ul>
+  </div>
+  <br>
+  <br>
+  <!-- A List -->
+  <div class="container" id="alist">
+    <h3 style="color: white;">A</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Akatsuki No Yona" target="_blank">Akatsuki No Yona</a></li>
+      <li style="color: white;"><a href="#" title="Ao No Exorcist" target="_blank">Ao No Exorcist</a></li>
+      <li style="color: white;"><a href="#" title="Ansatsu Kyoushitsu" target="_blank">Ansatsu Kyoushitsu</a></li>
+      <li style="color: white;"><a href="#" title="Ao Ashi" target="_blank">Ao Ashi</a></li>
+      <li style="color: white;"><a href="#" title="Another" target="_blank">Another</a></li>
+      <li style="color: white;"><a href="#" title="Arknights: Reimei Zensou" target="_blank">Arknights: Reimei Zensou</a></li>
+      <li style="color: white;"><a href="#" title="Arifureta Shokugyou de Sekai Saikyou Season 2" target="_blank">Arifureta Shokugyou de Sekai Saikyou Season 2</a></li>
+      <li style="color: white;"><a href="#" title="Anohana" target="_blank">Anohana</a></li>
+      <li style="color: white;"><a href="#" title="Akebi-chan no Sailor-fuku" target="_blank">Akebi-chan no Sailor-fuku</a></li>
+      <li style="color: white;"><a href="#" title="Ao Haru Ride" target="_blank">Ao Haru Ride</a></li>
+    </ul>
+  </div>
+
+  <!-- B List -->
+  <div class="container" id="blist">
+    <h3 style="color: white;">B</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Boku no Hero Academia Season 6" target="_blank">Boku no Hero Academia Season 6</a></li>
+      <li style="color: white;"><a href="#" title="Bleach : Sennen Kesshen-Hen" target="_blank">Bleach : Sennen Kesshen-Hen</a></li>
+      <li style="color: white;"><a href="#" title="Bocchi The Rock" target="_blank">Bocchi The Rock</a></li>
+      <li style="color: white;"><a href="#" title="Bungou Stray Dogs : Season 3" target="_blank">Bungou Stray Dogs : Season 3</a></li>
+      <li style="color: white;"><a href="#" title="Blue Period" target="_blank">Blue Period</a></li>
+      <li style="color: white;"><a href="#" title="Black Clover" target="_blank">Black Clover</a></li>
+      <li style="color: white;"><a href="#" title="Blue Lock" target="_blank">Blue Lock</a></li>
+      <li style="color: white;"><a href="#" title="Boruto : Naruto The Next Generation" target="_blank">Boruto : Naruto The Next Generation</a></li>
+      <li style="color: white;"><a href="#" title="Baki" target="_blank">Baki</a></li>
+      <li style="color: white;"><a href="#" title="Bokura ga Ita" target="_blank">Bokura ga Ita</a></li>
+    </ul>
+  </div>
+  
+  <!-- C List -->
+  <div class="container" id="clist">
+    <h3 style="color: white;">C</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Charlotte" target="_blank">Charlotte</a></li>
+      <li style="color: white;"><a href="#" title="Chainsaw Man" target="_blank">Chainsaw Man</a></li>
+      <li style="color: white;"><a href="#" title="Code Geass" target="_blank">Code Geass</a></li>
+      <li style="color: white;"><a href="#" title="Chuunibyou demo Koi ga Shitai" target="_blank">Chuunibyou demo Koi ga Shitai</a></li>
+      <li style="color: white;"><a href="#" title="Claymore" target="_blank">Claymore</a></li>
+      <li style="color: white;"><a href="#" title="Citrus" target="_blank">Citrus</a></li>
+      <li style="color: white;"><a href="#" title="Clannad" target="_blank">Clannad</a></li>
+      <li style="color: white;"><a href="#" title="Chihayafuru" target="_blank">Chihayafuru</a></li>
+      <li style="color: white;"><a href="#" title="Campione" target="_blank">Campione</a></li>
+      <li style="color: white;"><a href="#" title="Clockwork Planet" target="_blank">Clockwork Planet</a></li>
+    </ul>
+  </div>
+  
+  <!-- D List -->
+  <div class="container" id="dlist">
+    <h3 style="color: white;">D</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Date a Live Season 3" target="_blank">Date a Live Season 3</a></li>
+      <li style="color: white;"><a href="#" title="Dr. Stone" target="_blank">Dr. Stone</a></li>
+      <li style="color: white;"><a href="#" title="Darker than Black" target="_blank">Darker than Black</a></li>
+      <li style="color: white;"><a href="#" title="Death Note" target="_blank">Death Note</a></li>
+      <li style="color: white;"><a href="#" title="Dororo" target="_blank">Dororo</a></li>
+      <li style="color: white;"><a href="#" title="Death Parade" target="_blank">Death Parade</a></li>
+      <li style="color: white;"><a href="#" title="Domestic na Kanojo" target="_blank">Domestic na Kanojo</a></li>
+      <li style="color: white;"><a href="#" title="Donten ni Warau" target="_blank">Donten ni Warau</a></li>
+      <li style="color: white;"><a href="#" title="Darling in the FranXXX" target="_blank">Darling in the FranXXX</a></li>
+      <li style="color: white;"><a href="#" title="Demi-chan wa Kataritai" target="_blank">Demi-chan wa Kataritai</a></li>
+    </ul>
+  </div>
+
+  <!-- E List -->
+  <div class="container" id="elist">
+    <h3 style="color: white;">E</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Edens Zero" target="_blank">Edens Zero</a></li>
+      <li style="color: white;"><a href="#" title="Enen no Shouboutai" target="_blank">Enen no Shouboutai</a></li>
+      <li style="color: white;"><a href="#" title="Eromanga-sensei" target="_blank">Eromanga-sensei</a></li>
+      <li style="color: white;"><a href="#" title="Endride" target="_blank">Endride</a></li>
+      <li style="color: white;"><a href="#" title="Elfen lied" target="_blank">Elfen lied</a></li>
+      <li style="color: white;"><a href="#" title="Etotama" target="_blank">Etotama</a></li>
+      <li style="color: white;"><a href="#" title="Eizouken ni wa Te wo Dasu na!" target="_blank">Eizouken ni wa Te wo Dasu na!</a></li>
+      <li style="color: white;"><a href="#" title="Engage Kiss" target="_blank">Engage Kiss</a></li>
+      <li style="color: white;"><a href="#" title="Ergo Proxy" target="_blank">Ergo Proxy</a></li>
+      <li style="color: white;"><a href="#" title="Egao no Daika" target="_blank">Egao no Daika</a></li>
+    </ul>
+  </div>
+
+  <!-- F List -->
+  <div class="container" id="flist">
+    <h3 style="color: white;">F</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Fullmetal Alchemist" target="_blank">Fullmetal Alchemist</a></li>
+      <li style="color: white;"><a href="#" title="Fruits Basket" target="_blank">Fruits Basket</a></li>
+      <li style="color: white;"><a href="#" title="Fate Apocrypha" target="_blank">Fate Apocrypha</a></li>
+      <li style="color: white;"><a href="#" title="Fairy Tail" target="_blank">Fairy Tail</a></li>
+      <li style="color: white;"><a href="#" title="Fate/Grand Order: Zettai Majuu Sensen Babylonia" target="_blank">Fate/Grand Order: Zettai Majuu Sensen Babylonia</a></li>
+      <li style="color: white;"><a href="#" title="Fate/Zero" target="_blank">Fate/Zero</a></li>
+      <li style="color: white;"><a href="#" title="Flying Witch" target="_blank">Flying Witch</a></li>
+      <li style="color: white;"><a href="#" title="Free!" target="_blank">Free!</a></li>
+      <li style="color: white;"><a href="#" title="Futoku no Guild" target="_blank">Futoku no Guild</a></li>
+      <li style="color: white;"><a href="#" title="Fuuto Tantei" target="_blank">Fuuto Tantei</a></li>
+    </ul>
+  </div>
+
+  <!-- G List -->
+  <div class="container" id="glist">
+    <h3 style="color: white;">G</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Grand Blue" target="_blank">Grand Blue</a></li>
+      <li style="color: white;"><a href="#" title="Gotoubun no Hanayome" target="_blank">Gotoubun no Hanayome</a></li>
+      <li style="color: white;"><a href="#" title="Golden Time" target="_blank">Golden Time</a></li>
+      <li style="color: white;"><a href="#" title="Guilty Crown" target="_blank">Guilty Crown</a></li>
+      <li style="color: white;"><a href="#" title="Gyakkyou Burai Kaiji Season 2" target="_blank">Gyakkyou Burai Kaiji Season 2</a></li>
+      <li style="color: white;"><a href="#" title="Gunjou no Fanfare" target="_blank">Gunjou no Fanfare</a></li>
+      <li style="color: white;"><a href="#" title="Great Pretender" target="_blank">Great Pretender</a></li>
+      <li style="color: white;"><a href="#" title="Gal to Kyouryuu" target="_blank">Gal to Kyouryuu</a></li>
+      <li style="color: white;"><a href="#" title="Gakuen Basara" target="_blank">Gakuen Basara</a></li>
+      <li style="color: white;"><a href="#" title="Gyakuten Sekai no Denchi Shoujo" target="_blank">Gyakuten Sekai no Denchi Shoujo</a></li>
+    </ul>
+  </div>
+
+  <!-- H List -->
+  <div class="container" id="hlist">
+    <h3 style="color: white;">H</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Haikyuu!!" target="_blank">Haikyuu!!</a></li>
+      <li style="color: white;"><a href="#" title="Hajimete no Gal" target="_blank">Hajimete no Gal</a></li>
+      <li style="color: white;"><a href="#" title="Handa-kun" target="_blank">Handa-kun</a></li>
+      <li style="color: white;"><a href="#" title="High School DxD" target="_blank">High School DxD</a></li>
+      <li style="color: white;"><a href="#" title="Hunter x Hunter" target="_blank">Hunter x Hunter</a></li>
+      <li style="color: white;"><a href="#" title="Hyouka" target="_blank">Hyouka</a></li>
+      <li style="color: white;"><a href="#" title="Hachi-nan tte Sore wa Nai deshou!" target="_blank">Hachi-nan tte Sore wa Nai deshou!</a></li>
+      <li style="color: white;"><a href="#" title="High Card" target="_blank">High Card</a></li>
+      <li style="color: white;"><a href="#" title="Happy Sugar Life" target="_blank">Happy Sugar Life</a></li>
+      <li style="color: white;"><a href="#" title="Horimiya" target="_blank">Horimiya</a></li>
+    </ul>
+  </div>
+
+  <!-- I List -->
+  <div class="container" id="ilist">
+    <h3 style="color: white;">I</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Inuyashiki" target="_blank">Inuyashiki</a></li>
+      <li style="color: white;"><a href="#" title="Isekai Maou to Shoukan Shoujo no Dorei Majutsu" target="_blank">Isekai Maou to Shoukan Shoujo no Dorei Majutsu</a></li>
+      <li style="color: white;"><a href="#" title="Inugami-san to Nekoyama-san" target="_blank">Inugami-san to Nekoyama-san</a></li>
+      <li style="color: white;"><a href="#" title="Inu x Boku SS" target="_blank">Inu x Boku SS</a></li>
+      <li style="color: white;"><a href="#" title="Isekai Ojisan" target="_blank">Isekai Ojisan</a></li>
+      <li style="color: white;"><a href="#" title="Infinite Dendrogram" target="_blank">Infinite Dendrogram</a></li>
+      <li style="color: white;"><a href="#" title="Ijiranaide, Nagatoro-san" target="_blank">Ijiranaide, Nagatoro-san</a></li>
+      <li style="color: white;"><a href="#" title="Irozuku Sekai no Ashita Kara" target="_blank">Irozuku Sekai no Ashita Kara</a></li>
+      <li style="color: white;"><a href="#" title="Ichiban Ushiro no Daimaou" target="_blank">Ichiban Ushiro no Daimaou</a></li>
+      <li style="color: white;"><a href="#" title="Isekai Quartet" target="_blank">Isekai Quartet</a></li>
+    </ul>
+  </div>
+
+  <!-- J List -->
+  <div class="container" id="jlist">
+    <h3 style="color: white;">J</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Jojo Bizarre Adventure" target="_blank">Jojo Bizarre Adventure</a></li>
+      <li style="color: white;"><a href="#" title="Jaku-Chara Tomozaki-kun" target="_blank">Jaku-Chara Tomozaki-kun</a></li>
+      <li style="color: white;"><a href="#" title="Jouran : The Princess of Snow and Blood" target="_blank">Jouran : The Princess of Snow and Blood</a></li>
+      <li style="color: white;"><a href="#" title="Joker Game" target="_blank">Joker Game</a></li>
+      <li style="color: white;"><a href="#" title="Joshikausei" target="_blank">Joshikausei</a></li>
+      <li style="color: white;"><a href="#" title="Jujutsu Kaisen" target="_blank">Jujutsu Kaisen</a></li>
+      <li style="color: white;"><a href="#" title="Jibaku Shounen Hanako-kun" target="_blank">Jibaku Shounen Hanako-kun</a></li>
+      <li style="color: white;"><a href="#" title="Jinrui wa Suitai Shimashita" target="_blank">Jinrui wa Suitai Shimashita</a></li>
+      <li style="color: white;"><a href="#" title="Just Because!" target="_blank">Just Because!</a></li>
+      <li style="color: white;"><a href="#" title="Jigoku Shoujo" target="_blank">Jigoku Shoujo</a></li>
+    </ul>
+  </div>
+
+  <!-- K List -->
+  <div class="container" id="klist">
+    <h3 style="color: white;">K</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="K-On!" target="_blank">K-On!</a></li>
+      <li style="color: white;"><a href="#" title="Kaguya-sama wa Kokurasetai Season 3" target="_blank">Kaguya-sama wa Kokurasetai Season 3</a></li>
+      <li style="color: white;"><a href="#" title="Kakegurui" target="_blank">Kakegurui</a></li>
+      <li style="color: white;"><a href="#" title="Kanojo Okarishimasu" target="_blank">Kanojo Okarishimasu</a></li>
+      <li style="color: white;"><a href="#" title="Kage no Jitsuryokusha ni Naritakute!" target="_blank">Kage no Jitsuryokusha ni Naritakute!</a></li>
+      <li style="color: white;"><a href="#" title="Kimi ni Todoke" target="_blank">Kimi ni Todoke</a></li>
+      <li style="color: white;"><a href="#" title="Kuroko No Basket" target="_blank">Kuroko No Basket</a></li>
+      <li style="color: white;"><a href="#" title="Kaichou wa Maid-sama!" target="_blank">Kaichou wa Maid-sama!</a></li>
+      <li style="color: white;"><a href="#" title="Kimetsu no Yaiba" target="_blank">Kimetsu no Yaiba</a></li>
+      <li style="color: white;"><a href="#" title="Kizumonogatari" target="_blank">Kizumonogatari</a></li>
+    </ul>
+  </div>
+
+  <!-- L List -->
+  <div class="container" id="llist">
+    <h3 style="color: white;">L</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Love Live!" target="_blank">Love Live!</a></li>
+      <li style="color: white;"><a href="#" title="Last Period" target="_blank">Last Period</a></li>
+      <li style="color: white;"><a href="#" title="Litte Witch Academia" target="_blank">Litte Witch Academia</a></li>
+      <li style="color: white;"><a href="#" title="Log Herizon" target="_blank">Log Herizon</a></li>
+      <li style="color: white;"><a href="#" title="Lycoris Recoil" target="_blank">Lycoris Recoil</a></li>
+      <li style="color: white;"><a href="#" title="Litte Busters!" target="_blank">Litte Busters!</a></li>
+      <li style="color: white;"><a href="#" title="Lovely Complex" target="_blank">Lovely Complex</a></li>
+      <li style="color: white;"><a href="#" title="Lost Song" target="_blank">Lost Song</a></li>
+      <li style="color: white;"><a href="#" title="Listeners" target="_blank">Listeners</a></li>
+      <li style="color: white;"><a href="#" title="Leadale no Daichi nite" target="_blank">Leadale no Daichi nite</a></li>
+    </ul>
+  </div>
+
+  <!-- M List -->
+  <div class="container" id="mlist">
+    <h3 style="color: white;">M</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Made in Abyss" target="_blank">Made in Abyss</a></li>
+      <li style="color: white;"><a href="#" title="Mahouka Koukou no Rettousei" target="_blank">Mahouka Koukou no Rettousei</a></li>
+      <li style="color: white;"><a href="#" title="Maou Gakuin no Futekigousha" target="_blank">Maou Gakuin no Futekigousha</a></li>
+      <li style="color: white;"><a href="#" title="Mob Psycho 100 Season 3" target="_blank">Mob Psycho 100 Season 3</a></li>
+      <li style="color: white;"><a href="#" title="Mushoku Tensei: Isekai Ittara Honki Dasu" target="_blank">Mushoku Tensei: Isekai Ittara Honki Dasu</a></li>
+      <li style="color: white;"><a href="#" title="Megami-ryou no Ryoubo-kun" target="_blank">Megami-ryou no Ryoubo-kun</a></li>
+      <li style="color: white;"><a href="#" title="Maou Gakuin no Futekigousha Season 2" target="_blank">Maou Gakuin no Futekigousha Season 2</a></li>
+      <li style="color: white;"><a href="#" title="Mahou Sensou" target="_blank">Mahou Sensou</a></li>
+      <li style="color: white;"><a href="#" title="Mahou Shoujo Madoka Magica" target="_blank">Mahou Shoujo Madoka Magica</a></li>
+      <li style="color: white;"><a href="#" title="Majo no Tabitabi" target="_blank">Majo no Tabitabi</a></li>
+    </ul>
+  </div>
+
+  <!-- N List -->
+  <div class="container" id="nlist">
+    <h3 style="color: white;">N</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Nanatsu no Taizai" target="_blank">Nanatsu no Taizai</a></li>
+      <li style="color: white;"><a href="#" title="NieR: Automata Ver1.1a" target="_blank">NieR: Automata Ver1.1a</a></li>
+      <li style="color: white;"><a href="#" title="Noblesse" target="_blank">Noblesse</a></li>
+      <li style="color: white;"><a href="#" title="No Game No Life" target="_blank">No Game No Life</a></li>
+      <li style="color: white;"><a href="#" title="Noragami" target="_blank">Noragami</a></li>
+      <li style="color: white;"><a href="#" title="Netoge no Yome wa Onna no Ko ja Nai to Omotta" target="_blank">Netoge no Yome wa Onna no Ko ja Nai to Omotta</a></li>
+      <li style="color: white;"><a href="#" title="Nisekoi" target="_blank">Nisekoi</a></li>
+      <li style="color: white;"><a href="#" title="Nakemono-tachi no Yoru" target="_blank">Nakemono-tachi no Yoru</a></li>
+      <li style="color: white;"><a href="#" title="Nichijou" target="_blank">Nichijou</a></li>
+      <li style="color: white;"><a href="#" title="Ningen Fushin no Boukensha-tachi ga Sekai wo Sukuu you desu" target="_blank">Ningen Fushin no Boukensha-tachi ga Sekai wo Sukuu you desu</a></li>
+    </ul>
+  </div>
+
+  <!-- O List -->
+  <div class="container" id="olist">
+    <h3 style="color: white;">O</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="One Piece" target="_blank">One Piece</a></li>
+      <li style="color: white;"><a href="#" title="Oregairu" target="_blank">Oregairu</a></li>
+      <li style="color: white;"><a href="#" title="One Punch Man" target="_blank">One Punch Man</a></li>
+      <li style="color: white;"><a href="#" title="Oresuki" target="_blank">Oresuki</a></li>
+      <li style="color: white;"><a href="#" title="Overlord Season 4" target="_blank">Overlord Season 4</a></li>
+      <li style="color: white;"><a href="#" title="Owari no Seraph" target="_blank">Owari no Seraph</a></li>
+      <li style="color: white;"><a href="#" title="Otorimonogatari" target="_blank">Otorimonogatari</a></li>
+      <li style="color: white;"><a href="#" title="Ore Monogatari" target="_blank">Ore Monogatari</a></li>
+      <li style="color: white;"><a href="#" title="Orange" target="_blank">Orange</a></li>
+      <li style="color: white;"><a href="#" title="Okaasan Online" target="_blank">Okaasan Online</a></li>
+    </ul>
+  </div>
+
+  <!-- P List -->
+  <div class="container" id="plist">
+    <h3 style="color: white;">P</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Pastel Memories" target="_blank">Pastel Memories</a></li>
+      <li style="color: white;"><a href="#" title="Platinum End" target="_blank">Platinum End</a></li>
+      <li style="color: white;"><a href="#" title="Plastic Memories" target="_blank">Plastic Memories</a></li>
+      <li style="color: white;"><a href="#" title="Psycho-Pass" target="_blank">Psycho-Pass</a></li>
+      <li style="color: white;"><a href="#" title="Piano no Mori" target="_blank">Piano no Mori</a></li>
+      <li style="color: white;"><a href="#" title="Plunderer" target="_blank">Plunderer</a></li>
+      <li style="color: white;"><a href="#" title="Peach Boy Riverside" target="_blank">Peach Boy Riverside</a></li>
+      <li style="color: white;"><a href="#" title="Plastic Neesan" target="_blank">Plastic Neesan</a></li>
+      <li style="color: white;"><a href="#" title="Phantom: Requiem for the Phantom" target="_blank">Phantom: Requiem for the Phantom</a></li>
+      <li style="color: white;"><a href="#" title="Princess Connect" target="_blank">Princess Connect</a></li>
+    </ul>
+  </div>
+
+  <!-- Q List -->
+  <div class="container" id="qlist">
+    <h3 style="color: white;">Q</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Qualidea Code" target="_blank">Qualidea Code</a></li>
+      <li style="color: white;"><a href="#" title="Quan Zhi Gao Shou" target="_blank">Quan Zhi Gao Shou</a></li>
+    </ul>
+  </div>
+
+  <!-- R List -->
+  <div class="container" id="rlist">
+    <h3 style="color: white;">R</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Re:LIFE" target="_blank">Re:LIFE</a></li>
+      <li style="color: white;"><a href="#" title="Re:Zero Kara Hajimeru Isekai Seikatsu" target="_blank">Re:Zero Kara Hajimeru Isekai Seikatsu</a></li>
+      <li style="color: white;"><a href="#" title="Rokudenashi Majutsu Koushi to Akashic Records" target="_blank">Rokudenashi Majutsu Koushi to Akashic Records</a></li>
+      <li style="color: white;"><a href="#" title="Re-Main" target="_blank">Re-Main</a></li>
+      <li style="color: white;"><a href="#" title="Re: Creators" target="_blank">Re: Creators</a></li>
+      <li style="color: white;"><a href="#" title="Renai Boukun" target="_blank">Renai Boukun</a></li>
+      <li style="color: white;"><a href="#" title="Runway de Waratte" target="_blank">Runway de Waratte</a></li>
+      <li style="color: white;"><a href="#" title="Rozen Maiden" target="_blank">Rozen Maiden</a></li>
+      <li style="color: white;"><a href="#" title="Rewrite" target="_blank">Rewrite</a></li>
+      <li style="color: white;"><a href="#" title="Radiant" target="_blank">Radiant</a></li>
+    </ul>
+  </div>
+
+  <!-- S List -->
+  <div class="container" id="slist">
+    <h3 style="color: white;">S</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Sword Art Online" target="_blank">Sword Art Online</a></li>
+      <li style="color: white;"><a href="#" title="Shigatsu wa Kimi no Uso" target="_blank">Shigatsu wa Kimi no Uso</a></li>
+      <li style="color: white;"><a href="#" title="Shaman King" target="_blank">Shaman King</a></li>
+      <li style="color: white;"><a href="#" title="Selection Project" target="_blank">Selection Project</a></li>
+      <li style="color: white;"><a href="#" title="Sougeki no Souma" target="_blank">Sougeki no Souma</a></li>
+      <li style="color: white;"><a href="#" title="Spy x Family Season 2" target="_blank">Spy x Family Season 2</a></li>
+      <li style="color: white;"><a href="#" title="Steins Gate" target="_blank">Steins Gate</a></li>
+      <li style="color: white;"><a href="#" title="Saiki Kusuo" target="_blank">Saiki Kusuo</a></li>
+      <li style="color: white;"><a href="#" title="Shingeki no Kyojin" target="_blank">Shingeki no Kyojin</a></li>
+      <li style="color: white;"><a href="#" title="Seishun Buta Yarou wa Bunny Girl Senpai" target="_blank">Seishun Buta Yarou wa Bunny Girl Senpai</a></li>
+    </ul>
+  </div>
+
+  <!-- T List -->
+  <div class="container" id="tlist">
+    <h3 style="color: white;">T</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Tokyo Revengers Season 2" target="_blank">Tokyo Revengers Season 2</a></li>
+      <li style="color: white;"><a href="#" title="Tokyo Ghoul" target="_blank">Tokyo Ghoul</a></li>
+      <li style="color: white;"><a href="#" title="Tonikaku Kawaii" target="_blank">Tonikaku Kawaii</a></li>
+      <li style="color: white;"><a href="#" title="Tomodachi Game" target="_blank">Tomodachi Game</a></li>
+      <li style="color: white;"><a href="#" title="Tonari no Kaibutsu-kun" target="_blank">Tonari no Kaibutsu-kun</a></li>
+      <li style="color: white;"><a href="#" title="Tensei Shitara Ken Deshita" target="_blank">Tensei Shitara Ken Deshita</a></li>
+      <li style="color: white;"><a href="#" title="Tenkuu Shinpan" target="_blank">Tenkuu Shinpan</a></li>
+      <li style="color: white;"><a href="#" title="Tantei wa Mou, Shindeiru." target="_blank">Tantei wa Mou, Shindeiru.</a></li>
+      <li style="color: white;"><a href="#" title="Tate no Yuusha no Nariagari" target="_blank">Tate no Yuusha no Nariagari</a></li>
+      <li style="color: white;"><a href="#" title="Tsurezure Children" target="_blank">Tsurezure Children</a></li>
+    </ul>
+  </div>
+
+  <!-- U List -->
+  <div class="container" id="ulist">
+    <h3 style="color: white;">U</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Uzaki-chan wa Asobitai!" target="_blank">Uzaki-chan wa Asobitai!</a></li>
+      <li style="color: white;"><a href="#" title="Uramichi Oniisan" target="_blank">Uramichi Oniisan</a></li>
+      <li style="color: white;"><a href="#" title="Uchitama" target="_blank">Uchitama</a></li>
+      <li style="color: white;"><a href="#" title="Ueno-san wa Bukiyou" target="_blank">Ueno-san wa Bukiyou</a></li>
+      <li style="color: white;"><a href="#" title="Uchi no Maid ga Uzasugiru!" target="_blank">Uchi no Maid ga Uzasugiru!</a></li>
+      <li style="color: white;"><a href="#" title="Urusei Yatsura" target="_blank">Urusei Yatsura</a></li>
+      <li style="color: white;"><a href="#" title="Usagi Drop" target="_blank">Usagi Drop</a></li>
+      <li style="color: white;"><a href="#" title="Uchouten Kazoku" target="_blank">Uchouten Kazoku</a></li>
+      <li style="color: white;"><a href="#" title="Umineko no Naku Koro ni" target="_blank">Umineko no Naku Koro ni</a></li>
+      <li style="color: white;"><a href="#" title="UchiMusume" target="_blank">UchiMusume</a></li>
+    </ul>
+  </div>
+
+  <!-- V List -->
+  <div class="container" id="vlist">
+    <h3 style="color: white;">V</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Vanitas no Carte" target="_blank">Vanitas no Carte</a></li>
+      <li style="color: white;"><a href="#" title="Vinland Saga" target="_blank">Vinland Saga</a></li>
+      <li style="color: white;"><a href="#" title="Violet Evergarden" target="_blank">Violet Evergarden</a></li>
+      <li style="color: white;"><a href="#" title="Vivy" target="_blank">Vivy</a></li>
+      <li style="color: white;"><a href="#" title="Vivid Strike" target="_blank">Vivid Strike</a></li>
+      <li style="color: white;"><a href="#" title="Visual Prison" target="_blank">Visual Prison</a></li>
+      <li style="color: white;"><a href="#" title="Vinland Saga Season 2" target="_blank">Vinland Saga Season 2</a></li>
+      <li style="color: white;"><a href="#" title="Vanitas no Carte Season 2" target="_blank">Vanitas no Carte Season 2</a></li>
+    </ul>
+  </div>
+
+  <!-- W List -->
+  <div class="container" id="wlist">
+    <h3 style="color: white;">W</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Wonder Egg Priority" target="_blank">Wonder Egg Priority</a></li>
+      <li style="color: white;"><a href="#" title="World Trigger" target="_blank">World Trigger</a></li>
+      <li style="color: white;"><a href="#" title="Witch Craft Works" target="_blank">Witch Craft Works</a></li>
+      <li style="color: white;"><a href="#" title="Working" target="_blank">Working</a></li>
+      <li style="color: white;"><a href="#" title="Wotaku ni Koi wa Muzukashii" target="_blank">Wotaku ni Koi wa Muzukashii</a></li>
+      <li style="color: white;"><a href="#" title="White Album 2" target="_blank">White Album 2</a></li>
+    </ul>
+  </div>
+
+  <!-- Y List -->
+  <div class="container" id="ylist">
+    <h3 style="color: white;">Y</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Yuru Camp" target="_blank">Yuru Camp</a></li>
+      <li style="color: white;"><a href="#" title="Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e Season 2" target="_blank">Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e Season 2</a></li>
+      <li style="color: white;"><a href="#" title="Yagate Kimi ni Naru" target="_blank">Yagate Kimi ni Naru</a></li>
+      <li style="color: white;"><a href="#" title="Yakunara Mug Cup mo" target="_blank">Yakunara Mug Cup mo</a></li>
+      <li style="color: white;"><a href="#" title="Yowamushi Pedal Season 5" target="_blank">Yowamushi Pedal Season 5</a></li>
+      <li style="color: white;"><a href="#" title="Yofukashi no Uta" target="_blank">Yofukashi no Uta</a></li>
+    </ul>
+  </div>
+
+  <!-- Z List -->
+  <div class="container" id="zlist">
+    <h3 style="color: white;">Z</h3>
+    <br>
+    <ul class="list-group-horizontal">
+      <li style="color: white;"><a href="#" title="Zombieland Saga" target="_blank">Zombieland Saga</a></li>
+      <li style="color: white;"><a href="#" title="Zombieland Saga Season 2" target="_blank">Zombieland Saga Season 2</a></li>
+      <li style="color: white;"><a href="#" title="Zoku Owarimonogatari" target="_blank">Zoku Owarimonogatari</a></li>
+      <li style="color: white;"><a href="#" title="Zetsuen no Tempest" target="_blank">Zetsuen no Tempest</a></li>
+      <li style="color: white;"><a href="#" title="Zero kara Hajimeru Mahou no Sho" target="_blank">Zero kara Hajimeru Mahou no Sho</a></li>
+      <li style="color: white;"><a href="#" title="Zero no Tsukaima" target="_blank">Zero no Tsukaima</a></li>
+    </ul>
+  </div>
+
+  <!-- Footer -->
+<footer class="bg-dark text-center text-white">
+  <div class="container p-4 pb-0">
+    <div class="row">
+      <div class="col-lg-3 col-md-6 mb-2 mb-md-0">
+        <h5 class="text-uppercase">About</h5>
+
+        <p>
+          Paimonime - Download Batch dan Streaming Anime Subtitle Indonesia resolusi 240p,360p,480p,720p, format Mp4 dan MKV Lengkap.
+        </p>
+      </div>
+
+      <div class="col-lg-2 col-md-5 mb-2 mb-md-0" id="infofooter">
+        <h5 class="text-uppercase">Info</h5>
+
+        <p>
+          Untuk Kemudahan dan Kenyamanan silahkan gunakan Browser Google Chrome
+        </p>
+      </div>
+    </div>
+  </div>
+
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fa-brands fa-facebook"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fa-brands fa-twitter"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fa-brands fa-google"></i></a>
+      <a class="btn btn-outline-light btn-floating m-1" href="#" role="button"><i class="fa-brands fa-instagram"></i></a>
+    </section>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+     © Copyright 2023 : Paimonime.
+  </div>
+</footer>
+
+</body>
+</html>

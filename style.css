@@ -1,0 +1,64 @@
+
+.dropdown-menu{
+    border-radius: 0;
+    border: none;
+    padding: .5em;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .23);
+}
+.dropdown-menu ul{
+    list-style: none;
+    padding: 0;
+}
+.dropdown-menu.show{
+    display: flex;
+}
+
+.dropdown-menu li a{
+    color: black;
+    padding: .5em 1em;
+}
+
+.pagination{
+    margin-left: 38%;
+    margin-top: 2%;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+    color: #0000FF;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+    background-color: #ffaf7a;
+    border-color: #ffaf7a;
+}
+
+.pagination :hover{
+    color: #ffaf7a;
+}
+
+.pagination-2{
+    margin-left: 38%;
+    margin-top: 2%;
+}
+
+#infofooter{
+    margin-left: 50%;
+}
+
+#cardtitle{
+    margin-bottom: 20%;
+}
+
+#commentsession{
+    margin-top: 15%;
+}
+
+#headercard{
+    background-color: #ffaf7a;
+}
